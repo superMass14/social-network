@@ -1,0 +1,11 @@
+CREATE TABLE
+    IF NOT EXISTS comment (
+        id INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT NOT NULL,
+        content TEXT DEFAULT "NULL",
+        date TEXT NOT NULL,
+        media TEXT DEFAULT NULL,
+        post_id INTEGER NOT NULL,
+        user_id INTEGER NOT NULL,
+        FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE ON UPDATE CASCADE,
+        FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
+    )
