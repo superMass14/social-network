@@ -1,9 +1,8 @@
 # SOCIAL-NETWORKS
 
 ## Showcase
-<video  controls autoplay muted loop playsinline preload="auto" src="./showcase.webm">
-    Your browser does not support the video tag.
-</video>
+
+![Showcase](./showcase.gif)
 
 ## Description
 
